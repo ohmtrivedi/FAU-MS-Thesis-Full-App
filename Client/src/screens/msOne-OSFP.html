@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>OS Fingerprinting</title>
+    <link rel="stylesheet" href="../../assets/css/msOne-OSFP.css">
+</head>
+
+<body>
+    <h1>OS Fingerprinting via N-map</h1>
+    <div id="inputContainer">
+        <div>
+            <label id="inputText">IP Address of Target</label>
+            <input id="targetIP" placeholder="1.2.3.4" />
+            <label id="ipValid"></label>
+        </div>
+        <div>
+            <button id="submitBtn">Get Details</button>
+        </div>
+    </div>
+    <div id="resultsContainer">
+        <table id="results" align="center">
+            <tr>
+                <th>Target IP</th>
+                <th>Location</th>
+                <th>Open Ports</th>
+                <th>Running OS</th>
+                <th>Get CVEs</th>
+            </tr>
+            <tr>
+                <td><b>62.103.72.66</b></td>
+                <td>Some Location</td>
+                <td>123, 456</td>
+                <td><b>Microsoft Windows Server 2008 R2 SP1</b></td>
+                <td><button class="cve_btns" id="btn0">Get CVEs</button></td>
+            </tr>
+        </table>
+    </div>
+  
+    <script>
+        require('../js/msOne-OSFP.js');
+    </script>
+</body>
+
+</html>

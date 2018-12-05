@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>OS Fingerprint Attack Detection</title>
+    <link rel="stylesheet" href="../../assets/css/msThree.css">
+</head>
+
+<body>
+    <h1>OS Fingerprinting Detection (Passive Mode)</h1>
+    <form id="inputContainer" enctype="multipart/form-data">
+        <div>
+            <label id="inputText">Captured packet stream</label>
+            <input type="file" accept=".pcap" />
+        </div>
+        <div>
+            <button id="submitBtn" type="submit">Analyze PCAP</button>
+        </div>
+    </form>
+    <div>
+        <p id="fileUpload" style="display:none"></p>
+    </div>
+    <div>
+        <p id="pcapInfo"></p>
+    </div>
+    <div>
+        <p id="summary"></p>
+    </div>
+    <div id="logsDiv1" style="display:none">
+        <p><b>Stateless Attacks</b></p>
+        <textarea id="consoleLogsSLA" rows="10" cols="125"></textarea>
+    </div>
+    <div id="logsDiv2" style="display:none">
+        <p><b>Statefull Attacks</b></p>
+        <textarea id="consoleLogsSFA" rows="5" cols="125"></textarea>
+    </div>
+
+    <script>
+        require('../js/msThree.js');
+    </script>
+</body>
+
+</html>

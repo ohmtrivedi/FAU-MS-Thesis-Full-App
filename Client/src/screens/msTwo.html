@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>OS Fingerprint Attack Detection</title>
+    <link rel="stylesheet" href="../../assets/css/msTwo.css">
+</head>
+
+<body>
+    <h1>OS Fingerprinting Detection (Live Mode)</h1>
+    <div id="inputContainer">
+        <div>
+            <button id="startBtn" class="submitBtn" type="submit">Start New Session</button>
+        </div>
+        <div>
+            <button id="stopBtn" class="submitBtn" type="submit">Stop Current Session</button>
+        </div>
+    </div>
+    <div>
+        <p id="sessionStatus"></p>
+    </div>
+    <div>
+        <p id="summary" style="display:none"></p>
+    </div>
+    <div id="logsDiv1" style="display:none">
+        <p><b>Stateless Attacks</b></p>
+        <textarea id="consoleLogsSLA" rows="10" cols="125"></textarea>
+    </div>
+    <div id="logsDiv2" style="display:none">
+        <p><b>Statefull Attacks</b></p>
+        <textarea id="consoleLogsSFA" rows="5" cols="125"></textarea>
+    </div>
+
+    <script>
+        require('../js/msTwo.js');
+    </script>
+</body>
+
+</html>
